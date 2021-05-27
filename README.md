@@ -2,18 +2,18 @@
 Example for report, file upload and download, email, lacalisation, JWT security, exception hadeling etc.
 
 ## Build module respectively
-mizan-multilodule-comon
-mizan-multilodule-entity
-mizan-multilodule-repository
-mizan-multilodule-report
-mizan-multilodule-business
-mizan-multilodule-service
-mizan-multilodule-auth
-mizan-multilodule-controller
-mizan-multilodule-launch
+spring-multilodule-comon, 
+spring-multilodule-entity, 
+spring-multilodule-repository, 
+spring-multilodule-report, 
+spring-multilodule-business, 
+spring-multilodule-service, 
+spring-multilodule-auth, 
+spring-multilodule-controller, 
+spring-multilodule-launch
 
 ## Run module
-mizan-multilodule-launch
+spring-multilodule-launch
 
 ## SwaggerUI URL
 http://localhost:9090/example/v1.0.0/swagger-ui.html
