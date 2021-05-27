@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "ISO-8859-1" />
+      <link href = "css/styles.css" rel = "stylesheet"/>
+      <title>example</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		    $("#locales").change(function () {
+		        var selectedOption = $('#locales').val();
+		        if (selectedOption != ''){
+		            window.location.replace('index?lang=' + selectedOption);
+		        }
+		    });
+		});
+		</script>
+   </head>
+   <body>
+   
+   		<span th:text="#{lang.change}"></span>:
+		<select id="locales">
+		    <option value="">Select Language</option>
+		    <option value="en" th:text="#{lang.eng}"></option>
+		    <option value="fr" th:text="#{lang.fr}"></option>
+		    <option value="bn" th:text="#{lang.bn}"></option>
+		</select>
+		
+	
+	  <h4 th:text="#{greeting}"></h4>
+      <a href="http://localhost:9090/api/example/v1.0.0/swagger-ui.html" th:text = "#{api.url}"></a>
+      
+      
+      
+   </body>
+</html>
